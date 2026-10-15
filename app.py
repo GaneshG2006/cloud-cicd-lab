@@ -3,13 +3,15 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     return """
-    <h1>CI/CD Pipeline Using Jenkins</h1>
-    <p>Flask application deployed using Docker.</p>
-    <p>Experiment 5 - Cloud Computing and DevOps</p>
+    <h1>CI/CD Pipeline Successfully Automated!</h1>
+    <p>GitHub -> Jenkins -> Docker</p>
+    <p>Experiment 5 - Automatic Deployment Successful</p>
     """
+
 
 @app.route("/health")
 def health():
